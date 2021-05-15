@@ -1,15 +1,15 @@
-import resolve from "rollup-plugin-node-resolve";
-import commonjs from "rollup-plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
 import sourceMaps from "rollup-plugin-sourcemaps";
 import camelCase from "lodash.camelcase";
-import json from "rollup-plugin-json";
+import json from "@rollup/plugin-json";
 import babel from "@rollup/plugin-babel";
 import { terser } from "rollup-plugin-terser";
 import path from "path";
 
 const pkg = require("./package.json");
 
-const libraryName = "--libraryname--";
+const libraryName = "fb-chat-polluter";
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"];
 
